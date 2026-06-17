@@ -35,6 +35,7 @@
 /* VYEPTI Card Styles */
 .columns.cards > div {
   gap: 24px;
+  align-items: stretch;
 }
 
 .columns.cards > div > div {
