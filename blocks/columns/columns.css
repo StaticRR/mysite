@@ -70,3 +70,27 @@
   font-weight: 700;
   margin-top: auto;
 }
+
+@media (width < 900px) {
+  .columns.cards > div {
+    flex-direction: column;
+  }
+
+  .columns.cards > div > div {
+    width: 100%;
+  }
+}
+
+@media (width < 900px) {
+  .columns.cards > div > div {
+    font-size: 0.9rem;
+  }
+
+  .columns.cards > div > div h2 {
+    font-size: 1.3rem;
+  }
+
+  .columns.cards > div > div a {
+    width: 80%;
+  }
+}

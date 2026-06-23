@@ -16,11 +16,17 @@
 
 .quote-block > div > div:first-child {
   flex: 2;
-  padding: 20px 40px;
+  padding: 40px 48px;
+  align-self: center;
 }
 
 .quote-block > div > div:last-child {
   flex: 1;
+  align-self: stretch;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
 }
 
 .quote-block img {
@@ -61,4 +67,37 @@
   font-size: 0.85rem;
   font-weight: 400;
   color: #555;
+}
+
+@media (width < 900px) {
+  .quote-block > div {
+    flex-direction: column;
+  }
+
+  .quote-block > div > div:first-child {
+    padding: 32px 24px 16px 24px;
+    text-align: center;
+  }
+
+  .quote-block > div > div:first-child p:nth-child(1)::after {
+    margin: 16px auto 0 auto;
+  }
+
+  .quote-block > div > div:last-child {
+    width: 100%;
+  }
+
+  .quote-block img {
+    width: 100%;
+  }
+}
+
+@media (width < 900px) {
+  .quote-block {
+    margin: 16px auto;
+  }
+
+  .quote-block > div > div:first-child p:nth-child(1) {
+    font-size: 1.1rem;
+  }
 }
